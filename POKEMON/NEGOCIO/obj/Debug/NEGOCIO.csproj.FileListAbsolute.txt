@@ -1,0 +1,11 @@
+C:\Users\Lautaro\Desktop\POKEMON\NEGOCIO\bin\Debug\NEGOCIO.dll
+C:\Users\Lautaro\Desktop\POKEMON\NEGOCIO\bin\Debug\NEGOCIO.pdb
+C:\Users\Lautaro\Desktop\POKEMON\NEGOCIO\bin\Debug\DAO.dll
+C:\Users\Lautaro\Desktop\POKEMON\NEGOCIO\bin\Debug\DOMINIO.dll
+C:\Users\Lautaro\Desktop\POKEMON\NEGOCIO\bin\Debug\DAO.pdb
+C:\Users\Lautaro\Desktop\POKEMON\NEGOCIO\bin\Debug\DOMINIO.pdb
+C:\Users\Lautaro\Desktop\POKEMON\NEGOCIO\obj\Debug\NEGOCIO.csprojAssemblyReference.cache
+C:\Users\Lautaro\Desktop\POKEMON\NEGOCIO\obj\Debug\NEGOCIO.csproj.CoreCompileInputs.cache
+C:\Users\Lautaro\Desktop\POKEMON\NEGOCIO\obj\Debug\NEGOCIO.csproj.CopyComplete
+C:\Users\Lautaro\Desktop\POKEMON\NEGOCIO\obj\Debug\NEGOCIO.dll
+C:\Users\Lautaro\Desktop\POKEMON\NEGOCIO\obj\Debug\NEGOCIO.pdb
