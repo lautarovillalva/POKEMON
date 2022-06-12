@@ -7,3 +7,12 @@ C:\Users\Lautaro\Desktop\POKEMON\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cach
 C:\Users\Lautaro\Desktop\POKEMON\DAO\obj\Debug\DAO.csproj.CopyComplete
 C:\Users\Lautaro\Desktop\POKEMON\DAO\obj\Debug\DAO.dll
 C:\Users\Lautaro\Desktop\POKEMON\DAO\obj\Debug\DAO.pdb
+C:\Users\Lautaro\GitHub\POKEMON\POKEMON\DAO\bin\Debug\DAO.dll
+C:\Users\Lautaro\GitHub\POKEMON\POKEMON\DAO\bin\Debug\DAO.pdb
+C:\Users\Lautaro\GitHub\POKEMON\POKEMON\DAO\bin\Debug\DOMINIO.dll
+C:\Users\Lautaro\GitHub\POKEMON\POKEMON\DAO\bin\Debug\DOMINIO.pdb
+C:\Users\Lautaro\GitHub\POKEMON\POKEMON\DAO\obj\Debug\DAO.csprojAssemblyReference.cache
+C:\Users\Lautaro\GitHub\POKEMON\POKEMON\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+C:\Users\Lautaro\GitHub\POKEMON\POKEMON\DAO\obj\Debug\DAO.csproj.CopyComplete
+C:\Users\Lautaro\GitHub\POKEMON\POKEMON\DAO\obj\Debug\DAO.dll
+C:\Users\Lautaro\GitHub\POKEMON\POKEMON\DAO\obj\Debug\DAO.pdb

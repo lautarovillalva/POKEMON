@@ -41,10 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="generation.cs" />
-    <Compile Include="pokemon.cs" />
+    <Compile Include="Generation.cs" />
+    <Compile Include="Pokemon.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="type.cs" />
+    <Compile Include="TypeP.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

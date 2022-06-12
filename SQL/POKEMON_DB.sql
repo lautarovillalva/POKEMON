@@ -2128,7 +2128,7 @@ VALUES
     (717, 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/717.png', 'https://img.pokemondb.net/sprites/x-y/normal/yveltal.png'),
     (718, 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/718.png', 'https://img.pokemondb.net/sprites/x-y/normal/zygarde.png'),
     (719, 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/719.png', 'https://img.pokemondb.net/sprites/x-y/normal/diancie.png'),
-    (720, 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/720.png', 'https://img.pokemondb.net/sprites/x-y/normal/hoopahoopa.png'),
+    (720, 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/720.png', 'https://img.pokemondb.net/sprites/x-y/normal/hoopahoopa-confined.png'),
     (721, 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/721.png', 'https://img.pokemondb.net/sprites/x-y/normal/volcanion.png'),
     (001, 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png', 'https://img.pokemondb.net/sprites/x-y/normal/bulbasaur.png'),
     (002, 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png', 'https://img.pokemondb.net/sprites/x-y/normal/ivysaur.png'),

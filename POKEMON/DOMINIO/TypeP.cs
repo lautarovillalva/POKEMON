@@ -6,20 +6,21 @@ using System.Threading.Tasks;
 
 namespace DOMINIO
 {
-    public class Generation
+    public class TypeP
     {
-
         public int Id { get; set; }
         public string Name { get; set; }
-        public DateTime Date { get; set; }
-        public string Information { get; set; }
-        public string Image_URL { get; set; }
-        public Generation() { }
 
-        public Generation(int id)
+        public TypeP(int id)
         {
             this.Id = id;
         }
+        public TypeP(int id, string name)
+        {
+            this.Id = id;
+            this.Name = name;
+        }
+        public TypeP() { }
     }
 
 }

@@ -6,18 +6,20 @@ using System.Threading.Tasks;
 
 namespace DOMINIO
 {
-    public class pokemon
+    public class Pokemon
     {
-        public int id { get; set; }
-        public string name { get; set; }
-        public Type type1 { get; set; }
-        public Type type2 { get; set; }
-        public int hp { get; set; }
-        public int attack { get; set; }
-        public int defense { get; set; }
-        public int speed { get; set; }
-        public int specialDefense { get; set; }
-        public bool isLegendary { get; set; }
-        public generation generation { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public TypeP Type1 { get; set; }
+        public TypeP Type2 { get; set; }
+        public int Hp { get; set; }
+        public int Attack { get; set; }
+        public int Defense { get; set; }
+        public int Speed { get; set; }
+        public int SpecialAttack { get; set; }
+        public int SpecialDefense { get; set; }
+        public bool IsLegendary { get; set; }
+        public Generation Generation { get; set; }
+        public List<string> Images { get; set; }
     }
 }

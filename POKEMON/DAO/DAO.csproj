@@ -41,9 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="dataAccess.cs" />
-    <Compile Include="generation_dao.cs" />
+    <Compile Include="DataAccess.cs" />
+    <Compile Include="Generation_dao.cs" />
+    <Compile Include="Pokemon_dao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Type_dao.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DOMINIO\DOMINIO.csproj">

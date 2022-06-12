@@ -10,9 +10,9 @@ namespace NEGOCIO
 {
     public class Generation_neg
     {
-        public List<generation> getGenerations()
+        private Generation_dao generation_Dao = new Generation_dao();
+        public List<Generation> getGenerations()
         {
-            generation_dao generation_Dao = new generation_dao();
             return generation_Dao.getGenerations();
         }
     }

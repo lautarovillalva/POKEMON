@@ -42,7 +42,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Generation_neg.cs" />
+    <Compile Include="Pokemon_neg.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Type_neg.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAO\DAO.csproj">

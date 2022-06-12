@@ -4,3 +4,9 @@ C:\Users\Lautaro\Desktop\POKEMON\DOMINIO\obj\Debug\DOMINIO.csprojAssemblyReferen
 C:\Users\Lautaro\Desktop\POKEMON\DOMINIO\obj\Debug\DOMINIO.csproj.CoreCompileInputs.cache
 C:\Users\Lautaro\Desktop\POKEMON\DOMINIO\obj\Debug\DOMINIO.dll
 C:\Users\Lautaro\Desktop\POKEMON\DOMINIO\obj\Debug\DOMINIO.pdb
+C:\Users\Lautaro\GitHub\POKEMON\POKEMON\DOMINIO\bin\Debug\DOMINIO.dll
+C:\Users\Lautaro\GitHub\POKEMON\POKEMON\DOMINIO\bin\Debug\DOMINIO.pdb
+C:\Users\Lautaro\GitHub\POKEMON\POKEMON\DOMINIO\obj\Debug\DOMINIO.csprojAssemblyReference.cache
+C:\Users\Lautaro\GitHub\POKEMON\POKEMON\DOMINIO\obj\Debug\DOMINIO.csproj.CoreCompileInputs.cache
+C:\Users\Lautaro\GitHub\POKEMON\POKEMON\DOMINIO\obj\Debug\DOMINIO.dll
+C:\Users\Lautaro\GitHub\POKEMON\POKEMON\DOMINIO\obj\Debug\DOMINIO.pdb

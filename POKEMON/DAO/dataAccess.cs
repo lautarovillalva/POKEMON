@@ -9,10 +9,10 @@ using System.Data;
 
 namespace DAO
 {
-    class dataAccess
+    class DataAccess
     {
         readonly string routeDB= "Data Source=.\\sqlexpress;Initial Catalog = POKEMON_DB; Integrated Security = True";
-        public dataAccess() { }
+        public DataAccess() { }
         private SqlConnection GetSqlConnection()
         {
             SqlConnection cn = new SqlConnection(routeDB);
