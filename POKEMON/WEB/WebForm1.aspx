@@ -9,7 +9,7 @@
         <h1>POKÉDEX</h1>
 
 
-        <div class="row row-cols-1 row-cols-md-6 g-4">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
             <asp:Repeater ID="rpPokemons" runat="server">
                 <ItemTemplate>
 
@@ -24,6 +24,9 @@
                                 <h5 class="card-title">
                                     <br />
                                     <%# Eval("Name") %></h5>
+                                <div class="type-cell type-<%#Eval("Type1.Name").ToString().ToLower()%>">
+                                    <%#Eval("Type1.Name") %>
+                                </div>
                                 <%--<p class="card-text">HP:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%# Eval("Hp") %> <br /> Attack:&nbsp;&nbsp;<%# Eval("Attack") %> <br /> Defense:&nbsp;&nbsp;<%# Eval("Defense") %></p>--%>
                                 <div class="parent">
                                     <div class="div1">
