@@ -15,7 +15,7 @@ namespace DAO
         
         private List<string> GetImageByIdPokemon(int idPokemon)
         {
-            string query = "SELECT ID_POKEMON, IMAGE_URL1,IMAGE_URL2 FROM IMAGES";
+            string query = "SELECT ID_POKEMON, IMAGE_URL FROM IMAGESBYPOKEMON";
             DataTable dataTable = DataAccess.GetDataTable("Images", query);
 
             List<string> images = new List<string>();
@@ -24,8 +24,7 @@ namespace DAO
                 if (idPokemon == Convert.ToInt32(dataTable.Rows[i][0]))
                 {
                     images.Add(Convert.ToString(dataTable.Rows[i][1]));
-                    images.Add(Convert.ToString(dataTable.Rows[i][2]));
-
+                    
                 }
 
             }
@@ -36,7 +35,7 @@ namespace DAO
         public List<Pokemon> GetPokemons()
         {
             List<Pokemon> pokemons = new List<Pokemon>();
-            string query = "SELECT ID, NAME_, HP, ATTACK, DEFENSE, SPECIAL_ATTACK,SPECIAL_DEFENSE, SPEED, LENGENDARY, TYPE_1,isnull(TYPE_2,0), ID_GENERATION FROM POKEMONS";
+            string query = "SELECT ID, NAME_, HP, ATTACK, DEFENSE, SPECIAL_ATTACK,SPECIAL_DEFENSE, SPEED, LENGENDARY, ID_GENERATION FROM POKEMONS";
             DataTable dataTable = DataAccess.GetDataTable("Pokemons", query);
             for (int i = 0; i < dataTable.Rows.Count; i++)
             {
@@ -50,14 +49,34 @@ namespace DAO
                 pokemon.SpecialDefense = Convert.ToInt32(dataTable.Rows[i][6]);
                 pokemon.Speed = Convert.ToInt32(dataTable.Rows[i][7]);
                 pokemon.IsLegendary = Convert.ToBoolean(dataTable.Rows[i][8]);
-                pokemon.Type1 = new TypeP(Convert.ToInt32(dataTable.Rows[i][9]));
-                pokemon.Type2 = new TypeP(Convert.ToInt32(dataTable.Rows[i][10]));
-                pokemon.Generation =new Generation( Convert.ToInt32(dataTable.Rows[i][11]));
+                //pokemon.Type1 = new TypeP(Convert.ToInt32(dataTable.Rows[i][9]));
+                //pokemon.Type2 = new TypeP(Convert.ToInt32(dataTable.Rows[i][10]));
+
+                pokemon.Types = GetTypesByPokemon(pokemon.Id);
+
+                pokemon.Generation =new Generation(Convert.ToInt32(dataTable.Rows[i][9]));
 
                 pokemon.Images = GetImageByIdPokemon(pokemon.Id);
                 pokemons.Add(pokemon);
             }
             return pokemons;
+        }
+
+        private List<TypeP> GetTypesByPokemon(int idPokemon)
+        {
+            List<TypeP> typePs = new List<TypeP>();
+            string query = "SELECT ID_POKEMON, ID_TYPE FROM TYPESBYPOKEMON";
+            DataTable dataTable = DataAccess.GetDataTable("TypesByPokemon", query);
+            for (int i = 0; i < dataTable.Rows.Count; i++)
+            {
+                if (idPokemon == Convert.ToInt32(dataTable.Rows[i][0]))
+                {
+                    typePs.Add(new TypeP(Convert.ToInt32(dataTable.Rows[i][1])));
+                    
+                }
+
+            }
+            return typePs;
         }
     }
 }

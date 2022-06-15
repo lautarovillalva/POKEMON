@@ -29,18 +29,18 @@ namespace NEGOCIO
 
                 }
 
-                foreach (TypeP typ in type_Neg.GetTypes())
+                for (int i = 0; i < pok.Types.Count; i++)
                 {
-                    if (pok.Type1.Id == typ.Id)
+                    for (int z = 0; z < type_Neg.GetTypes().Count; z++)
                     {
-                        pok.Type1 = typ;
-                    }
-                    if (pok.Type2.Id == typ.Id)
-                    {
-                        pok.Type2 = typ;
+                        if (pok.Types[i].Id == type_Neg.GetTypes()[z].Id)
+                        {
+                            pok.Types[i].Name = type_Neg.GetTypes()[z].Name;
+                        }
                     }
 
                 }
+                
 
             }
             return pokemons;

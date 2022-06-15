@@ -12,6 +12,7 @@ namespace WEB
     public partial class WebForm1 : System.Web.UI.Page
     {
         private Pokemon_neg pokemon_Neg = new Pokemon_neg();
+
         protected void Page_Load(object sender, EventArgs e)
         {
             rpPokemons.DataSource = pokemon_Neg.GetPokemons();

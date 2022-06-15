@@ -10,8 +10,9 @@ namespace DOMINIO
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public TypeP Type1 { get; set; }
-        public TypeP Type2 { get; set; }
+        //public TypeP Type1 { get; set; }
+        //public TypeP Type2 { get; set; }
+        public List<TypeP> Types { get; set; }
         public int Hp { get; set; }
         public int Attack { get; set; }
         public int Defense { get; set; }

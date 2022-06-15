@@ -1,11 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="WEB.WebForm1" %>
 
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
-
-
         <h1>POKÉDEX</h1>
 
 
@@ -24,9 +23,11 @@
                                 <h5 class="card-title">
                                     <br />
                                     <%# Eval("Name") %></h5>
-                                <div class="type-cell type-<%#Eval("Type1.Name").ToString().ToLower()%>">
-                                    <%#Eval("Type1.Name") %>
+
+                                <div class="type-cell type-<%#Eval("Types[0].Name").ToString().ToLower()%>">
+                                    <%#Eval("Types[0].Name") %>
                                 </div>
+                                
                                 <%--<p class="card-text">HP:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%# Eval("Hp") %> <br /> Attack:&nbsp;&nbsp;<%# Eval("Attack") %> <br /> Defense:&nbsp;&nbsp;<%# Eval("Defense") %></p>--%>
                                 <div class="parent">
                                     <div class="div1">
