@@ -11,7 +11,7 @@ namespace WEB
 {
 
 
-    public partial class test
+    public partial class WebForm2
     {
     }
 }

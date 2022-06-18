@@ -3365,7 +3365,7 @@ VALUES
 (719,'https://img.pokemondb.net/sprites/x-y/normal/diancie.png'),
 (720,'https://assets.pokemon.com/assets/cms2/img/pokedex/full/720.png'),
 (720,'https://img.pokemondb.net/sprites/home/normal/hoopahoopa-confined.png'),
-(720,'https://img.pokemondb.net/sprites/x-y/normal/hoopahoopa-confined.png'),
+(720,'https://img.pokemondb.net/sprites/x-y/normal/hoopa-confined.png'),
 (721,'https://assets.pokemon.com/assets/cms2/img/pokedex/full/721.png'),
 (721,'https://img.pokemondb.net/sprites/home/normal/volcanion.png'),
 (721,'https://img.pokemondb.net/sprites/x-y/normal/volcanion.png'),

@@ -18,17 +18,20 @@
                             <div class="card-body">
 
                                 <div class="chip">
-                                    <img src="<%# Eval("Images[1]") %>" alt="Person" width="96"><b>#<%# Eval("Id") %></b>
+                                    <img src="<%# Eval("Images[2]") %>" alt="Person" width="96"><b>#<%# Eval("Id") %></b>
                                 </div>
                                 <h5 class="card-title">
-                                    <br />
                                     <%# Eval("Name") %></h5>
 
-                                <div class="type-cell type-<%#Eval("Types[0].Name").ToString().ToLower()%>">
+                               <%-- <div class="type-cell type-<%#Eval("Types[0].Name").ToString().ToLower()%>">
                                     <%#Eval("Types[0].Name") %>
-                                </div>
-                                
-                                <%--<p class="card-text">HP:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%# Eval("Hp") %> <br /> Attack:&nbsp;&nbsp;<%# Eval("Attack") %> <br /> Defense:&nbsp;&nbsp;<%# Eval("Defense") %></p>--%>
+                                </div>--%>
+
+                                <%for (int i = 0; i < pokemon_Neg.GetPokemons()[Convert.ToInt32(Eval("Id"))].Types.Count; i++)
+                                    {
+                                        Response.Write(pokemon_Neg.GetPokemons()[Convert.ToInt32(Eval("Id"))].Types[i].Name);
+                                    } %>
+
                                 <div class="parent">
                                     <div class="div1">
                                         <h6>HP</h6>
@@ -48,7 +51,7 @@
                                     </div>
                                 </div>
                             </div>
-
+                            <h6><%# Eval("Generation.Name") %></h6>
                         </div>
                     </div>
 
