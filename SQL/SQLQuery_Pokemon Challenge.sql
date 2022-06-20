@@ -1,21 +1,21 @@
 --  1.  Listado con todos los nombres de los Pokémons.
---  2.  Listado con los nombres de todos los Tipo1. 
---  3.  Listado con Los nombres de los Pokémons y el nombre del Tipo1.
+--  2.  Listado con los nombres de todos los Tipos. 
+--  3.  Listado con Los nombres de los Pokémons y el nombre del Tipos.
 --  4.  Listado con las Generationes y su Fecha.
 --  5.  Listado con el Id y nombre de los Pokémons Tipo Fuego.
 --  6.  Listado con el Id y nombre los Pokémons Tipo=6.
 --  7.  Listado con el nombre de los Pokémons que contengan la letra z.
 --  8.  Listado con el nombre y el HP de los Pokémons que tengan mas de 60 de HP.
---  9.  Listado con el Id, Nombre y Tipo1 de los Pokémons Legendarios.
+--  9.  Listado con el Id, Nombre y Tipos de los Pokémons Legendarios.
 -- 10.  Listado con los Nombres de los Pokémons de la Generación Johto, ordenado alfabéticamente por Nombre.
 -- 11.  Listado con los 5 Pokémons mas rápidos(Speed).
 -- 12.  Listado con los 5 Pokémons con menos defensa(defense).
 -- 13.  Listado con las Imágenes de la Generación del Pokémon con Id=499.
 -- 14.  Listado con los Nombres de Pokémons, HP, Ataque, Defensa, Velocidad de los Pokémons Legendarios entre la 3ra y 5ta Generación ordenados por Id de Generación descendiente.
--- 15.  Listado con los Nombres de Pokémons y su Tipo1 de los Pokémons con el Id desed el 133 al 136; 196 al 197, 470 al 471, y 700.
+-- 15.  Listado con los Nombres de Pokémons y su Tipos de los Pokémons con el Id desed el 133 al 136; 196 al 197, 470 al 471, y 700.
 -- 16.  Listado con nombre y sus Imágenes de las Generaciones lanzadas antes del 2005.
--- 17.  Listado con los Nombres, Tipo1, Tipo2, de los Pokémons no legendarios de la Generación 5. Solo listar si tiene 2 tipos.
--- 18.  Listar el Nombre del Pokémon Legendario con más Ataque de la generación 2, su Imagen1 y Tipo1.
+-- 17.  Listado con los Nombres, Tipos de los Pokémons no legendarios de la Generación 5. Solo listar si tiene 2 tipos.
+-- 18.  Listar el Nombre del Pokémon Legendario con más Ataque de la generación 2, sus Imágenes y Tipos.
 -- 19.  Listado con el Id, Nombre y el promedio de estadísticas de los Pokémons Legendarios.
 -- 20.  Listado con el Nombre y la cantidad de Pokémons Legendarios por Generación.
 -- 21.  

@@ -1,17 +1,44 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="WebForm2.aspx.cs" Inherits="WEB.WebForm2" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <div class="container">
-        <div class="row row-cols-1 row-cols-md-4 g-4">
+        <h1>POKÉDEX</h1>
+        <hr />
+        <div class="row row-cols-2 row-cols-md-4 g-2">
             <%foreach (DOMINIO.Pokemon item in pokemon_Neg.GetPokemons())
                 {%>
             <div class="col">
-                <div class="card h-100">
-                    <img src="<%:item.Images[0] %>" class="card-img-top foto1" alt="...">
-<%--                    <img src="<%:item.Images[1] %>" class="card-img-top foto2" alt="...">--%>
+                <div class="card h-100 border-secondary 
+                    <%if (item.IsLegendary)
+                    {%>
+                      border border-dark border-4
+                    <%} %>
+                    ">
+
+
+
+                    <div class="card card-flip h-100" style="border: none">
+                        <div class="card-front">
+                            <div class="card-body">
+
+                                <img src="<%:item.Images[0] %>" class="card-img-top foto1" alt="..." />
+
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-body">
+                                <img src="<%:item.Images[1] %>" class="card-img-top foto1" alt="..." />
+                            </div>
+                        </div>
+                    </div>
+
+
+    
                     <div class="card-body">
 
                         <div class="chip">
@@ -23,14 +50,13 @@
                         <div class="types">
 
 
-                        <%foreach (DOMINIO.TypeP types in item.Types)
-                            {%>
-                        <div class="type-cell type-<%:types.Name.ToLower()%>">
-                            <%:types.Name %>
-                        </div>
+                            <%foreach (DOMINIO.TypeP types in item.Types)
+                                {%>
+                            <div class="type-cell type-<%:types.Name.ToLower()%>">
+                                <%:types.Name %>
+                            </div>
 
-                        <%} %>
-
+                            <%} %>
                         </div>
 
 
@@ -53,6 +79,11 @@
                                 <h6><%:item.SpecialDefense %></h6>
                             </div>
                         </div>
+
+                        <%if (item.IsLegendary)
+                            {%>
+                        <h6 class="type-cell legendary">LEGENDARY</h6>
+                        <%} %>
                     </div>
 
                 </div>
