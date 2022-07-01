@@ -20,6 +20,10 @@ namespace DOMINIO
         {
             this.Id = id;
         }
+        public override string ToString()
+        {
+            return Name; 
+        }
     }
 
 }

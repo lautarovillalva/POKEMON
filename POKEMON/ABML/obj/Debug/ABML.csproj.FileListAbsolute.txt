@@ -1,0 +1,17 @@
+C:\Users\Lautaro\GitHub\POKEMON\POKEMON\ABML\obj\Debug\ABML.csprojAssemblyReference.cache
+C:\Users\Lautaro\GitHub\POKEMON\POKEMON\ABML\obj\Debug\ABML.frm_Inicio.resources
+C:\Users\Lautaro\GitHub\POKEMON\POKEMON\ABML\obj\Debug\ABML.Properties.Resources.resources
+C:\Users\Lautaro\GitHub\POKEMON\POKEMON\ABML\obj\Debug\ABML.csproj.GenerateResource.cache
+C:\Users\Lautaro\GitHub\POKEMON\POKEMON\ABML\obj\Debug\ABML.csproj.CoreCompileInputs.cache
+C:\Users\Lautaro\GitHub\POKEMON\POKEMON\ABML\bin\Debug\ABML.exe.config
+C:\Users\Lautaro\GitHub\POKEMON\POKEMON\ABML\bin\Debug\ABML.exe
+C:\Users\Lautaro\GitHub\POKEMON\POKEMON\ABML\bin\Debug\ABML.pdb
+C:\Users\Lautaro\GitHub\POKEMON\POKEMON\ABML\bin\Debug\DOMINIO.dll
+C:\Users\Lautaro\GitHub\POKEMON\POKEMON\ABML\bin\Debug\NEGOCIO.dll
+C:\Users\Lautaro\GitHub\POKEMON\POKEMON\ABML\bin\Debug\DAO.dll
+C:\Users\Lautaro\GitHub\POKEMON\POKEMON\ABML\bin\Debug\DOMINIO.pdb
+C:\Users\Lautaro\GitHub\POKEMON\POKEMON\ABML\bin\Debug\NEGOCIO.pdb
+C:\Users\Lautaro\GitHub\POKEMON\POKEMON\ABML\bin\Debug\DAO.pdb
+C:\Users\Lautaro\GitHub\POKEMON\POKEMON\ABML\obj\Debug\ABML.csproj.CopyComplete
+C:\Users\Lautaro\GitHub\POKEMON\POKEMON\ABML\obj\Debug\ABML.exe
+C:\Users\Lautaro\GitHub\POKEMON\POKEMON\ABML\obj\Debug\ABML.pdb

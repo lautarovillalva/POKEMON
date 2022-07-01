@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAO", "DAO\DAO.csproj", "{7
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NEGOCIO", "NEGOCIO\NEGOCIO.csproj", "{714299ED-EBD4-436E-933D-C0C0E4783BDB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ABML", "ABML\ABML.csproj", "{B553ACEB-68C1-4920-9622-F79BB8420135}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{714299ED-EBD4-436E-933D-C0C0E4783BDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{714299ED-EBD4-436E-933D-C0C0E4783BDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{714299ED-EBD4-436E-933D-C0C0E4783BDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B553ACEB-68C1-4920-9622-F79BB8420135}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B553ACEB-68C1-4920-9622-F79BB8420135}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B553ACEB-68C1-4920-9622-F79BB8420135}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B553ACEB-68C1-4920-9622-F79BB8420135}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
