@@ -15,3 +15,4 @@ C:\Users\Lautaro\GitHub\POKEMON\POKEMON\ABML\bin\Debug\DAO.pdb
 C:\Users\Lautaro\GitHub\POKEMON\POKEMON\ABML\obj\Debug\ABML.csproj.CopyComplete
 C:\Users\Lautaro\GitHub\POKEMON\POKEMON\ABML\obj\Debug\ABML.exe
 C:\Users\Lautaro\GitHub\POKEMON\POKEMON\ABML\obj\Debug\ABML.pdb
+C:\Users\Lautaro\GitHub\POKEMON\POKEMON\ABML\obj\Debug\ABML.frm_pokemon.resources

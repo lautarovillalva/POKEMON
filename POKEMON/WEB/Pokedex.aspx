@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="WebForm2.aspx.cs" Inherits="WEB.WebForm2" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Pokedex.aspx.cs" Inherits="WEB.WebForm2" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -40,7 +40,7 @@
                     <div class="card-body">
 
                         <div class="chip">
-                            <img src="<%:item.Images[2] %>" alt="Person" width="96"><b>#<%:item.Id %></b>
+                            <img src="<%:item.Images[2] %>" alt="pokemon" width="100"><b>#<%:item.Id %></b>
                         </div>
                         <h5 class="card-title">
                             <%:item.Name %></h5>
@@ -61,9 +61,9 @@
                             <%} %>
                         </div>
 
-                        <a href="WebForm4.aspx?ID=<%:item.Id %>" class="btn btn-link">+Info</a>
+                        
 
-                        <%-- <div class="stats">
+                         <div class="stats">
                             <div class="stats-name">
                                 <h6>HP</h6>
                                 <h6>Attack</h6>
@@ -80,7 +80,7 @@
                                 <h6><%:item.SpecialAttack %></h6>
                                 <h6><%:item.SpecialDefense %></h6>
                             </div>
-                        </div>--%>
+                        </div>
                     </div>
 
                 </div>
