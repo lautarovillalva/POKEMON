@@ -32,31 +32,36 @@ namespace ABML
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_pokemon));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.tbx_spDefense = new System.Windows.Forms.TextBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.tbx_defense = new System.Windows.Forms.TextBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.tbx_spAttack = new System.Windows.Forms.TextBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.tbx_attack = new System.Windows.Forms.TextBox();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.tbx_speed = new System.Windows.Forms.TextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.tbx_hp = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.clb_types = new System.Windows.Forms.CheckedListBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.lbx_generations = new System.Windows.Forms.ListBox();
             this.pbx_generation = new System.Windows.Forms.PictureBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.tbr_images = new System.Windows.Forms.TrackBar();
+            this.lbl_image3 = new System.Windows.Forms.Label();
+            this.lbl_image2 = new System.Windows.Forms.Label();
+            this.lbl_image1 = new System.Windows.Forms.Label();
+            this.tbx_image3 = new System.Windows.Forms.TextBox();
+            this.tbx_image2 = new System.Windows.Forms.TextBox();
+            this.tbx_image1 = new System.Windows.Forms.TextBox();
+            this.cbx_legendary = new System.Windows.Forms.CheckBox();
+            this.lbl_id = new System.Windows.Forms.Label();
+            this.tbx_name = new System.Windows.Forms.TextBox();
+            this.pbx_image = new System.Windows.Forms.PictureBox();
+            this.btn_save = new System.Windows.Forms.Button();
+            this.btn_cancel = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -68,267 +73,326 @@ namespace ABML
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_generation)).BeginInit();
             this.groupBox10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbr_images)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbx_image)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.cbx_legendary);
             this.groupBox1.Controls.Add(this.groupBox7);
             this.groupBox1.Controls.Add(this.groupBox6);
             this.groupBox1.Controls.Add(this.groupBox8);
             this.groupBox1.Controls.Add(this.groupBox5);
             this.groupBox1.Controls.Add(this.groupBox9);
             this.groupBox1.Controls.Add(this.groupBox4);
-            this.groupBox1.Location = new System.Drawing.Point(12, 81);
+            this.groupBox1.Location = new System.Drawing.Point(18, 83);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(302, 170);
+            this.groupBox1.Size = new System.Drawing.Size(302, 146);
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Stats";
             // 
             // groupBox7
             // 
-            this.groupBox7.Controls.Add(this.textBox6);
-            this.groupBox7.Location = new System.Drawing.Point(211, 97);
+            this.groupBox7.Controls.Add(this.tbx_spDefense);
+            this.groupBox7.Location = new System.Drawing.Point(211, 70);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(85, 45);
             this.groupBox7.TabIndex = 4;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "SpDefense";
             // 
+            // tbx_spDefense
+            // 
+            this.tbx_spDefense.Location = new System.Drawing.Point(6, 19);
+            this.tbx_spDefense.Name = "tbx_spDefense";
+            this.tbx_spDefense.Size = new System.Drawing.Size(73, 20);
+            this.tbx_spDefense.TabIndex = 19;
+            // 
             // groupBox6
             // 
-            this.groupBox6.Controls.Add(this.textBox3);
-            this.groupBox6.Location = new System.Drawing.Point(211, 36);
+            this.groupBox6.Controls.Add(this.tbx_defense);
+            this.groupBox6.Location = new System.Drawing.Point(211, 19);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(85, 45);
             this.groupBox6.TabIndex = 1;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Defense";
             // 
+            // tbx_defense
+            // 
+            this.tbx_defense.Location = new System.Drawing.Point(6, 19);
+            this.tbx_defense.Name = "tbx_defense";
+            this.tbx_defense.Size = new System.Drawing.Size(73, 20);
+            this.tbx_defense.TabIndex = 19;
+            // 
             // groupBox8
             // 
-            this.groupBox8.Controls.Add(this.textBox5);
-            this.groupBox8.Location = new System.Drawing.Point(106, 97);
+            this.groupBox8.Controls.Add(this.tbx_spAttack);
+            this.groupBox8.Location = new System.Drawing.Point(106, 70);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(85, 45);
             this.groupBox8.TabIndex = 3;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "SpAttack";
             // 
+            // tbx_spAttack
+            // 
+            this.tbx_spAttack.Location = new System.Drawing.Point(6, 19);
+            this.tbx_spAttack.Name = "tbx_spAttack";
+            this.tbx_spAttack.Size = new System.Drawing.Size(73, 20);
+            this.tbx_spAttack.TabIndex = 19;
+            // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.textBox2);
-            this.groupBox5.Location = new System.Drawing.Point(106, 36);
+            this.groupBox5.Controls.Add(this.tbx_attack);
+            this.groupBox5.Location = new System.Drawing.Point(106, 19);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(85, 45);
             this.groupBox5.TabIndex = 1;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Attack";
             // 
+            // tbx_attack
+            // 
+            this.tbx_attack.Location = new System.Drawing.Point(6, 19);
+            this.tbx_attack.Name = "tbx_attack";
+            this.tbx_attack.Size = new System.Drawing.Size(73, 20);
+            this.tbx_attack.TabIndex = 19;
+            // 
             // groupBox9
             // 
-            this.groupBox9.Controls.Add(this.textBox4);
-            this.groupBox9.Location = new System.Drawing.Point(6, 97);
+            this.groupBox9.Controls.Add(this.tbx_speed);
+            this.groupBox9.Location = new System.Drawing.Point(6, 70);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Size = new System.Drawing.Size(85, 45);
             this.groupBox9.TabIndex = 2;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Speed";
             // 
+            // tbx_speed
+            // 
+            this.tbx_speed.Location = new System.Drawing.Point(6, 19);
+            this.tbx_speed.Name = "tbx_speed";
+            this.tbx_speed.Size = new System.Drawing.Size(73, 20);
+            this.tbx_speed.TabIndex = 19;
+            // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.textBox1);
-            this.groupBox4.Location = new System.Drawing.Point(6, 36);
+            this.groupBox4.Controls.Add(this.tbx_hp);
+            this.groupBox4.Location = new System.Drawing.Point(6, 19);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(85, 45);
             this.groupBox4.TabIndex = 0;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "HP";
             // 
+            // tbx_hp
+            // 
+            this.tbx_hp.Location = new System.Drawing.Point(6, 19);
+            this.tbx_hp.Name = "tbx_hp";
+            this.tbx_hp.Size = new System.Drawing.Size(73, 20);
+            this.tbx_hp.TabIndex = 18;
+            // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.checkedListBox1);
-            this.groupBox2.Location = new System.Drawing.Point(333, 81);
+            this.groupBox2.Controls.Add(this.clb_types);
+            this.groupBox2.Location = new System.Drawing.Point(333, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(200, 89);
+            this.groupBox2.Size = new System.Drawing.Size(249, 217);
             this.groupBox2.TabIndex = 16;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Types";
             // 
+            // clb_types
+            // 
+            this.clb_types.FormattingEnabled = true;
+            this.clb_types.Location = new System.Drawing.Point(6, 19);
+            this.clb_types.Name = "clb_types";
+            this.clb_types.Size = new System.Drawing.Size(237, 184);
+            this.clb_types.TabIndex = 2;
+            // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.listBox1);
+            this.groupBox3.Controls.Add(this.lbx_generations);
             this.groupBox3.Controls.Add(this.pbx_generation);
-            this.groupBox3.Location = new System.Drawing.Point(333, 178);
+            this.groupBox3.Location = new System.Drawing.Point(18, 375);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(200, 73);
+            this.groupBox3.Size = new System.Drawing.Size(302, 147);
             this.groupBox3.TabIndex = 17;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Generation";
             // 
-            // checkedListBox1
+            // lbx_generations
             // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(6, 19);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(184, 64);
-            this.checkedListBox1.TabIndex = 2;
+            this.lbx_generations.FormattingEnabled = true;
+            this.lbx_generations.Location = new System.Drawing.Point(12, 19);
+            this.lbx_generations.Name = "lbx_generations";
+            this.lbx_generations.Size = new System.Drawing.Size(79, 121);
+            this.lbx_generations.TabIndex = 1;
             // 
             // pbx_generation
             // 
-            this.pbx_generation.Location = new System.Drawing.Point(90, 19);
+            this.pbx_generation.Location = new System.Drawing.Point(162, 36);
             this.pbx_generation.Name = "pbx_generation";
-            this.pbx_generation.Size = new System.Drawing.Size(104, 45);
+            this.pbx_generation.Size = new System.Drawing.Size(128, 83);
             this.pbx_generation.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbx_generation.TabIndex = 0;
             this.pbx_generation.TabStop = false;
             // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(6, 19);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(76, 43);
-            this.listBox1.TabIndex = 1;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(6, 19);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(73, 20);
-            this.textBox1.TabIndex = 18;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(6, 19);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(73, 20);
-            this.textBox2.TabIndex = 19;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(6, 19);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(73, 20);
-            this.textBox3.TabIndex = 19;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(6, 19);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(73, 20);
-            this.textBox4.TabIndex = 19;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(6, 19);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(73, 20);
-            this.textBox5.TabIndex = 19;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(6, 19);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(73, 20);
-            this.textBox6.TabIndex = 19;
-            // 
             // groupBox10
             // 
-            this.groupBox10.Controls.Add(this.trackBar1);
-            this.groupBox10.Controls.Add(this.pictureBox1);
-            this.groupBox10.Controls.Add(this.label3);
-            this.groupBox10.Controls.Add(this.label2);
-            this.groupBox10.Controls.Add(this.label1);
-            this.groupBox10.Controls.Add(this.textBox9);
-            this.groupBox10.Controls.Add(this.textBox8);
-            this.groupBox10.Controls.Add(this.textBox7);
-            this.groupBox10.Location = new System.Drawing.Point(18, 257);
+            this.groupBox10.Controls.Add(this.pbx_image);
+            this.groupBox10.Controls.Add(this.tbr_images);
+            this.groupBox10.Controls.Add(this.lbl_image3);
+            this.groupBox10.Controls.Add(this.lbl_image2);
+            this.groupBox10.Controls.Add(this.lbl_image1);
+            this.groupBox10.Controls.Add(this.tbx_image3);
+            this.groupBox10.Controls.Add(this.tbx_image2);
+            this.groupBox10.Controls.Add(this.tbx_image1);
+            this.groupBox10.Location = new System.Drawing.Point(18, 235);
             this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(515, 134);
+            this.groupBox10.Size = new System.Drawing.Size(564, 134);
             this.groupBox10.TabIndex = 18;
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "Images";
             // 
-            // textBox7
+            // tbr_images
             // 
-            this.textBox7.Location = new System.Drawing.Point(106, 20);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(177, 20);
-            this.textBox7.TabIndex = 0;
+            this.tbr_images.Location = new System.Drawing.Point(321, 20);
+            this.tbr_images.Maximum = 2;
+            this.tbr_images.Name = "tbr_images";
+            this.tbr_images.Orientation = System.Windows.Forms.Orientation.Vertical;
+            this.tbr_images.Size = new System.Drawing.Size(45, 100);
+            this.tbr_images.TabIndex = 7;
+            this.tbr_images.Scroll += new System.EventHandler(this.tbr_images_Scroll);
             // 
-            // textBox8
+            // lbl_image3
             // 
-            this.textBox8.Location = new System.Drawing.Point(107, 59);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(177, 20);
-            this.textBox8.TabIndex = 1;
+            this.lbl_image3.AutoSize = true;
+            this.lbl_image3.Location = new System.Drawing.Point(50, 105);
+            this.lbl_image3.Name = "lbl_image3";
+            this.lbl_image3.Size = new System.Drawing.Size(45, 13);
+            this.lbl_image3.TabIndex = 5;
+            this.lbl_image3.Text = "Image 3";
             // 
-            // textBox9
+            // lbl_image2
             // 
-            this.textBox9.Location = new System.Drawing.Point(107, 98);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(177, 20);
-            this.textBox9.TabIndex = 2;
+            this.lbl_image2.AutoSize = true;
+            this.lbl_image2.Location = new System.Drawing.Point(50, 66);
+            this.lbl_image2.Name = "lbl_image2";
+            this.lbl_image2.Size = new System.Drawing.Size(45, 13);
+            this.lbl_image2.TabIndex = 4;
+            this.lbl_image2.Text = "Image 2";
             // 
-            // label1
+            // lbl_image1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(50, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "label1";
+            this.lbl_image1.AutoSize = true;
+            this.lbl_image1.Location = new System.Drawing.Point(50, 27);
+            this.lbl_image1.Name = "lbl_image1";
+            this.lbl_image1.Size = new System.Drawing.Size(45, 13);
+            this.lbl_image1.TabIndex = 3;
+            this.lbl_image1.Text = "Image 1";
             // 
-            // label2
+            // tbx_image3
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(50, 66);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "label2";
+            this.tbx_image3.Location = new System.Drawing.Point(107, 98);
+            this.tbx_image3.Multiline = true;
+            this.tbx_image3.Name = "tbx_image3";
+            this.tbx_image3.Size = new System.Drawing.Size(177, 20);
+            this.tbx_image3.TabIndex = 2;
             // 
-            // label3
+            // tbx_image2
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(50, 105);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "label3";
+            this.tbx_image2.Location = new System.Drawing.Point(107, 59);
+            this.tbx_image2.Multiline = true;
+            this.tbx_image2.Name = "tbx_image2";
+            this.tbx_image2.Size = new System.Drawing.Size(177, 20);
+            this.tbx_image2.TabIndex = 1;
             // 
-            // pictureBox1
+            // tbx_image1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(405, 19);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
+            this.tbx_image1.Location = new System.Drawing.Point(106, 20);
+            this.tbx_image1.Multiline = true;
+            this.tbx_image1.Name = "tbx_image1";
+            this.tbx_image1.Size = new System.Drawing.Size(177, 20);
+            this.tbx_image1.TabIndex = 0;
             // 
-            // trackBar1
+            // cbx_legendary
             // 
-            this.trackBar1.Location = new System.Drawing.Point(321, 20);
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Orientation = System.Windows.Forms.Orientation.Vertical;
-            this.trackBar1.Size = new System.Drawing.Size(45, 100);
-            this.trackBar1.TabIndex = 7;
+            this.cbx_legendary.AutoSize = true;
+            this.cbx_legendary.Location = new System.Drawing.Point(220, 121);
+            this.cbx_legendary.Name = "cbx_legendary";
+            this.cbx_legendary.Size = new System.Drawing.Size(76, 17);
+            this.cbx_legendary.TabIndex = 5;
+            this.cbx_legendary.Text = "Legendary";
+            this.cbx_legendary.UseVisualStyleBackColor = true;
+            // 
+            // lbl_id
+            // 
+            this.lbl_id.AutoSize = true;
+            this.lbl_id.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_id.Location = new System.Drawing.Point(18, 12);
+            this.lbl_id.Name = "lbl_id";
+            this.lbl_id.Size = new System.Drawing.Size(39, 31);
+            this.lbl_id.TabIndex = 19;
+            this.lbl_id.Text = "Id";
+            // 
+            // tbx_name
+            // 
+            this.tbx_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbx_name.Location = new System.Drawing.Point(64, 12);
+            this.tbx_name.Name = "tbx_name";
+            this.tbx_name.Size = new System.Drawing.Size(256, 38);
+            this.tbx_name.TabIndex = 20;
+            // 
+            // pbx_image
+            // 
+            this.pbx_image.Location = new System.Drawing.Point(417, 21);
+            this.pbx_image.Name = "pbx_image";
+            this.pbx_image.Size = new System.Drawing.Size(97, 97);
+            this.pbx_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbx_image.TabIndex = 8;
+            this.pbx_image.TabStop = false;
+            // 
+            // btn_save
+            // 
+            this.btn_save.Location = new System.Drawing.Point(447, 411);
+            this.btn_save.Name = "btn_save";
+            this.btn_save.Size = new System.Drawing.Size(75, 23);
+            this.btn_save.TabIndex = 21;
+            this.btn_save.Text = "Save";
+            this.btn_save.UseVisualStyleBackColor = true;
+            // 
+            // btn_cancel
+            // 
+            this.btn_cancel.Location = new System.Drawing.Point(447, 464);
+            this.btn_cancel.Name = "btn_cancel";
+            this.btn_cancel.Size = new System.Drawing.Size(75, 23);
+            this.btn_cancel.TabIndex = 22;
+            this.btn_cancel.Text = "Cancel";
+            this.btn_cancel.UseVisualStyleBackColor = true;
             // 
             // frm_pokemon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(545, 471);
+            this.ClientSize = new System.Drawing.Size(594, 534);
+            this.Controls.Add(this.btn_cancel);
+            this.Controls.Add(this.btn_save);
+            this.Controls.Add(this.tbx_name);
+            this.Controls.Add(this.lbl_id);
             this.Controls.Add(this.groupBox10);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frm_pokemon";
-            this.Text = "POKéMON";
+            this.Text = "ADD POKéMON";
+            this.Load += new System.EventHandler(this.frm_pokemon_Load);
             this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
             this.groupBox6.ResumeLayout(false);
@@ -346,9 +410,10 @@ namespace ABML
             ((System.ComponentModel.ISupportInitialize)(this.pbx_generation)).EndInit();
             this.groupBox10.ResumeLayout(false);
             this.groupBox10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbr_images)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbx_image)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -362,24 +427,29 @@ namespace ABML
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.CheckedListBox clb_types;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox lbx_generations;
         private System.Windows.Forms.PictureBox pbx_generation;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tbx_hp;
+        private System.Windows.Forms.TextBox tbx_spDefense;
+        private System.Windows.Forms.TextBox tbx_defense;
+        private System.Windows.Forms.TextBox tbx_spAttack;
+        private System.Windows.Forms.TextBox tbx_attack;
+        private System.Windows.Forms.TextBox tbx_speed;
         private System.Windows.Forms.GroupBox groupBox10;
-        private System.Windows.Forms.TrackBar trackBar1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TrackBar tbr_images;
+        private System.Windows.Forms.Label lbl_image3;
+        private System.Windows.Forms.Label lbl_image2;
+        private System.Windows.Forms.Label lbl_image1;
+        private System.Windows.Forms.TextBox tbx_image3;
+        private System.Windows.Forms.TextBox tbx_image2;
+        private System.Windows.Forms.TextBox tbx_image1;
+        private System.Windows.Forms.CheckBox cbx_legendary;
+        private System.Windows.Forms.Label lbl_id;
+        private System.Windows.Forms.TextBox tbx_name;
+        private System.Windows.Forms.PictureBox pbx_image;
+        private System.Windows.Forms.Button btn_save;
+        private System.Windows.Forms.Button btn_cancel;
     }
 }

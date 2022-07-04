@@ -32,9 +32,9 @@ namespace ABML
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Inicio));
             this.dgv_pokemons = new System.Windows.Forms.DataGridView();
             this.pbx_image = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btn_add = new System.Windows.Forms.Button();
+            this.btn_modify = new System.Windows.Forms.Button();
+            this.btn_delete = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.lbl_spDefense = new System.Windows.Forms.Label();
@@ -95,36 +95,37 @@ namespace ABML
             this.pbx_image.TabIndex = 1;
             this.pbx_image.TabStop = false;
             // 
-            // button1
+            // btn_add
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(15, 45);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(88, 35);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Agregar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_add.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_add.Location = new System.Drawing.Point(15, 45);
+            this.btn_add.Name = "btn_add";
+            this.btn_add.Size = new System.Drawing.Size(88, 35);
+            this.btn_add.TabIndex = 3;
+            this.btn_add.Text = "Add";
+            this.btn_add.UseVisualStyleBackColor = true;
+            this.btn_add.Click += new System.EventHandler(this.btn_agregar_Click);
             // 
-            // button2
+            // btn_modify
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(121, 45);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(88, 35);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Modificar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_modify.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_modify.Location = new System.Drawing.Point(121, 45);
+            this.btn_modify.Name = "btn_modify";
+            this.btn_modify.Size = new System.Drawing.Size(88, 35);
+            this.btn_modify.TabIndex = 4;
+            this.btn_modify.Text = "Modify";
+            this.btn_modify.UseVisualStyleBackColor = true;
+            this.btn_modify.Click += new System.EventHandler(this.btn_modificar_Click);
             // 
-            // button3
+            // btn_delete
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(229, 45);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(88, 35);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Eliminar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btn_delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_delete.Location = new System.Drawing.Point(229, 45);
+            this.btn_delete.Name = "btn_delete";
+            this.btn_delete.Size = new System.Drawing.Size(88, 35);
+            this.btn_delete.TabIndex = 5;
+            this.btn_delete.Text = "Delete";
+            this.btn_delete.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
@@ -336,9 +337,9 @@ namespace ABML
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_delete);
+            this.Controls.Add(this.btn_modify);
+            this.Controls.Add(this.btn_add);
             this.Controls.Add(this.pbx_image);
             this.Controls.Add(this.dgv_pokemons);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -375,9 +376,9 @@ namespace ABML
 
         private System.Windows.Forms.DataGridView dgv_pokemons;
         private System.Windows.Forms.PictureBox pbx_image;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btn_add;
+        private System.Windows.Forms.Button btn_modify;
+        private System.Windows.Forms.Button btn_delete;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;

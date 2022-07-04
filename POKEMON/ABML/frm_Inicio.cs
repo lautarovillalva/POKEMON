@@ -19,7 +19,7 @@ namespace ABML
             InitializeComponent();
             LoadPokemons();
         }
-        private void LoadImage(string ImageURL)
+        public void LoadImage(string ImageURL)
         {
             try
             {
@@ -96,10 +96,21 @@ namespace ABML
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_agregar_Click(object sender, EventArgs e)
         {
-            frm_pokemon frm_Pokemon = new frm_pokemon();
-            frm_Pokemon.ShowDialog();
+            frm_pokemon add_pokemon = new frm_pokemon();
+            add_pokemon.ShowDialog();
+            LoadPokemons();
+        }
+
+        private void btn_modificar_Click(object sender, EventArgs e)
+        {
+            Pokemon selected = (Pokemon)dgv_pokemons.CurrentRow.DataBoundItem;
+            frm_pokemon modify_pokemon = new frm_pokemon(selected);
+
+            modify_pokemon.ShowDialog();
+            LoadPokemons();
+
         }
     }
 }

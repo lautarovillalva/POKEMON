@@ -21,6 +21,11 @@ namespace DOMINIO
             this.Name = name;
         }
         public TypeP() { }
+
+        public override string ToString()
+        {
+            return Name;
+        }
     }
 
 }
