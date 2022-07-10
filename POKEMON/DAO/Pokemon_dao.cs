@@ -35,7 +35,7 @@ namespace DAO
         public List<Pokemon> GetPokemons()
         {
             List<Pokemon> pokemons = new List<Pokemon>();
-            string query = "SELECT ID, NAME_, HP, ATTACK, DEFENSE, SPECIAL_ATTACK,SPECIAL_DEFENSE, SPEED, LENGENDARY, ID_GENERATION FROM POKEMONS";
+            string query = "SELECT ID, NAME_, HP, ATTACK, DEFENSE, SPECIAL_ATTACK,SPECIAL_DEFENSE, SPEED, LENGENDARY, ID_GENERATION FROM POKEMONS where pokemons.id<150";
             DataTable dataTable = DataAccess.GetDataTable("Pokemons", query);
             for (int i = 0; i < dataTable.Rows.Count; i++)
             {

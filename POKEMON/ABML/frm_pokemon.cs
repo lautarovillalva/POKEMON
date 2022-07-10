@@ -24,7 +24,7 @@ namespace ABML
         {
             InitializeComponent();
             this.pokemon = selected;
-            Text= "MODIFY POKéMON";
+            Text = "MODIFY POKéMON";
 
         }
         private void LoadComponents()
@@ -96,17 +96,17 @@ namespace ABML
                     {
                         for (int i = 0; i < clb_types.Items.Count; i++)
                         {
-                            if(clb_types.Items[i].ToString()== item.Name)
+                            if (clb_types.Items[i].ToString() == item.Name)
                             {
                                 clb_types.SetItemChecked(i, true);
                             }
 
-                             
+
                         }
 
                     }
 
-                    
+
                 }
 
 
@@ -120,7 +120,70 @@ namespace ABML
 
         private void tbr_images_Scroll(object sender, EventArgs e)
         {
-            LoadImage(pokemon.Images[tbr_images.Value]);
+            if (pokemon != null)
+            {
+                LoadImage(pokemon.Images[tbr_images.Value]);
+            }
+        }
+
+        private void btn_cancel_Click(object sender, EventArgs e)
+        {
+            error.Clear();
+        }
+
+        private bool Validation()
+        {
+            bool validation = true;
+            if (tbx_name.Text == "")
+            {
+                validation = false;
+                error.SetError(tbx_name, "Ingresar nombre.");
+            }
+            if (tbx_hp.Text == "" || tbx_attack.Text == "" || tbx_defense.Text == "" || tbx_speed.Text == "" || tbx_spAttack.Text == "" || tbx_spDefense.Text == "")
+            {
+                validation = false;
+                error.SetError(gbx_stats, "Completar campos");
+            }
+            if (clb_types.CheckedIndices == null)
+            {
+                validation = false;
+                error.SetError(gbx_types, "Seleccionar tipo/s.");
+            }
+            if (lbx_generations.SelectedItem == null)
+            {
+                validation = false;
+                error.SetError(lbx_generations, "Seleccionar generación.");
+            }
+            if (tbx_image1.Text == "" || tbx_image2.Text == "" || tbx_image3.Text == "")
+            {
+                validation = false;
+                error.SetError(gbx_images, "Completar al menos 3 imágenes");
+            }
+
+
+
+            return validation;
+        }
+
+
+        private void btn_save_Click(object sender, EventArgs e)
+        {
+            error.Clear();
+            if (Validation())
+            {
+                if (pokemon == null)
+                {
+                    //AddPokemon();
+                }
+                else
+                {
+                    //ModifyPokmeon();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Completar campos requeridos.");
+            }
         }
     }
 }

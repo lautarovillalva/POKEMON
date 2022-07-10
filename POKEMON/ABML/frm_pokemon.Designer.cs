@@ -29,8 +29,10 @@ namespace ABML
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_pokemon));
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gbx_stats = new System.Windows.Forms.GroupBox();
+            this.cbx_legendary = new System.Windows.Forms.CheckBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.tbx_spDefense = new System.Windows.Forms.TextBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
@@ -43,12 +45,13 @@ namespace ABML
             this.tbx_speed = new System.Windows.Forms.TextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.tbx_hp = new System.Windows.Forms.TextBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.gbx_types = new System.Windows.Forms.GroupBox();
             this.clb_types = new System.Windows.Forms.CheckedListBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.lbx_generations = new System.Windows.Forms.ListBox();
             this.pbx_generation = new System.Windows.Forms.PictureBox();
-            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.gbx_images = new System.Windows.Forms.GroupBox();
+            this.pbx_image = new System.Windows.Forms.PictureBox();
             this.tbr_images = new System.Windows.Forms.TrackBar();
             this.lbl_image3 = new System.Windows.Forms.Label();
             this.lbl_image2 = new System.Windows.Forms.Label();
@@ -56,42 +59,52 @@ namespace ABML
             this.tbx_image3 = new System.Windows.Forms.TextBox();
             this.tbx_image2 = new System.Windows.Forms.TextBox();
             this.tbx_image1 = new System.Windows.Forms.TextBox();
-            this.cbx_legendary = new System.Windows.Forms.CheckBox();
             this.lbl_id = new System.Windows.Forms.Label();
             this.tbx_name = new System.Windows.Forms.TextBox();
-            this.pbx_image = new System.Windows.Forms.PictureBox();
             this.btn_save = new System.Windows.Forms.Button();
             this.btn_cancel = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
+            this.error = new System.Windows.Forms.ErrorProvider(this.components);
+            this.gbx_stats.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.groupBox4.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.gbx_types.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_generation)).BeginInit();
-            this.groupBox10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tbr_images)).BeginInit();
+            this.gbx_images.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_image)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbr_images)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.error)).BeginInit();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // gbx_stats
             // 
-            this.groupBox1.Controls.Add(this.cbx_legendary);
-            this.groupBox1.Controls.Add(this.groupBox7);
-            this.groupBox1.Controls.Add(this.groupBox6);
-            this.groupBox1.Controls.Add(this.groupBox8);
-            this.groupBox1.Controls.Add(this.groupBox5);
-            this.groupBox1.Controls.Add(this.groupBox9);
-            this.groupBox1.Controls.Add(this.groupBox4);
-            this.groupBox1.Location = new System.Drawing.Point(18, 83);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(302, 146);
-            this.groupBox1.TabIndex = 15;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Stats";
+            this.gbx_stats.Controls.Add(this.cbx_legendary);
+            this.gbx_stats.Controls.Add(this.groupBox7);
+            this.gbx_stats.Controls.Add(this.groupBox6);
+            this.gbx_stats.Controls.Add(this.groupBox8);
+            this.gbx_stats.Controls.Add(this.groupBox5);
+            this.gbx_stats.Controls.Add(this.groupBox9);
+            this.gbx_stats.Controls.Add(this.groupBox4);
+            this.gbx_stats.Location = new System.Drawing.Point(18, 83);
+            this.gbx_stats.Name = "gbx_stats";
+            this.gbx_stats.Size = new System.Drawing.Size(302, 146);
+            this.gbx_stats.TabIndex = 15;
+            this.gbx_stats.TabStop = false;
+            this.gbx_stats.Text = "Stats";
+            // 
+            // cbx_legendary
+            // 
+            this.cbx_legendary.AutoSize = true;
+            this.cbx_legendary.Location = new System.Drawing.Point(220, 121);
+            this.cbx_legendary.Name = "cbx_legendary";
+            this.cbx_legendary.Size = new System.Drawing.Size(76, 17);
+            this.cbx_legendary.TabIndex = 5;
+            this.cbx_legendary.Text = "Legendary";
+            this.cbx_legendary.UseVisualStyleBackColor = true;
             // 
             // groupBox7
             // 
@@ -195,15 +208,15 @@ namespace ABML
             this.tbx_hp.Size = new System.Drawing.Size(73, 20);
             this.tbx_hp.TabIndex = 18;
             // 
-            // groupBox2
+            // gbx_types
             // 
-            this.groupBox2.Controls.Add(this.clb_types);
-            this.groupBox2.Location = new System.Drawing.Point(333, 12);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(249, 217);
-            this.groupBox2.TabIndex = 16;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Types";
+            this.gbx_types.Controls.Add(this.clb_types);
+            this.gbx_types.Location = new System.Drawing.Point(363, 12);
+            this.gbx_types.Name = "gbx_types";
+            this.gbx_types.Size = new System.Drawing.Size(249, 217);
+            this.gbx_types.TabIndex = 16;
+            this.gbx_types.TabStop = false;
+            this.gbx_types.Text = "Types";
             // 
             // clb_types
             // 
@@ -241,22 +254,31 @@ namespace ABML
             this.pbx_generation.TabIndex = 0;
             this.pbx_generation.TabStop = false;
             // 
-            // groupBox10
+            // gbx_images
             // 
-            this.groupBox10.Controls.Add(this.pbx_image);
-            this.groupBox10.Controls.Add(this.tbr_images);
-            this.groupBox10.Controls.Add(this.lbl_image3);
-            this.groupBox10.Controls.Add(this.lbl_image2);
-            this.groupBox10.Controls.Add(this.lbl_image1);
-            this.groupBox10.Controls.Add(this.tbx_image3);
-            this.groupBox10.Controls.Add(this.tbx_image2);
-            this.groupBox10.Controls.Add(this.tbx_image1);
-            this.groupBox10.Location = new System.Drawing.Point(18, 235);
-            this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(564, 134);
-            this.groupBox10.TabIndex = 18;
-            this.groupBox10.TabStop = false;
-            this.groupBox10.Text = "Images";
+            this.gbx_images.Controls.Add(this.pbx_image);
+            this.gbx_images.Controls.Add(this.tbr_images);
+            this.gbx_images.Controls.Add(this.lbl_image3);
+            this.gbx_images.Controls.Add(this.lbl_image2);
+            this.gbx_images.Controls.Add(this.lbl_image1);
+            this.gbx_images.Controls.Add(this.tbx_image3);
+            this.gbx_images.Controls.Add(this.tbx_image2);
+            this.gbx_images.Controls.Add(this.tbx_image1);
+            this.gbx_images.Location = new System.Drawing.Point(18, 235);
+            this.gbx_images.Name = "gbx_images";
+            this.gbx_images.Size = new System.Drawing.Size(594, 134);
+            this.gbx_images.TabIndex = 18;
+            this.gbx_images.TabStop = false;
+            this.gbx_images.Text = "Images";
+            // 
+            // pbx_image
+            // 
+            this.pbx_image.Location = new System.Drawing.Point(417, 21);
+            this.pbx_image.Name = "pbx_image";
+            this.pbx_image.Size = new System.Drawing.Size(97, 97);
+            this.pbx_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbx_image.TabIndex = 8;
+            this.pbx_image.TabStop = false;
             // 
             // tbr_images
             // 
@@ -319,16 +341,6 @@ namespace ABML
             this.tbx_image1.Size = new System.Drawing.Size(177, 20);
             this.tbx_image1.TabIndex = 0;
             // 
-            // cbx_legendary
-            // 
-            this.cbx_legendary.AutoSize = true;
-            this.cbx_legendary.Location = new System.Drawing.Point(220, 121);
-            this.cbx_legendary.Name = "cbx_legendary";
-            this.cbx_legendary.Size = new System.Drawing.Size(76, 17);
-            this.cbx_legendary.TabIndex = 5;
-            this.cbx_legendary.Text = "Legendary";
-            this.cbx_legendary.UseVisualStyleBackColor = true;
-            // 
             // lbl_id
             // 
             this.lbl_id.AutoSize = true;
@@ -347,15 +359,6 @@ namespace ABML
             this.tbx_name.Size = new System.Drawing.Size(256, 38);
             this.tbx_name.TabIndex = 20;
             // 
-            // pbx_image
-            // 
-            this.pbx_image.Location = new System.Drawing.Point(417, 21);
-            this.pbx_image.Name = "pbx_image";
-            this.pbx_image.Size = new System.Drawing.Size(97, 97);
-            this.pbx_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbx_image.TabIndex = 8;
-            this.pbx_image.TabStop = false;
-            // 
             // btn_save
             // 
             this.btn_save.Location = new System.Drawing.Point(447, 411);
@@ -364,6 +367,7 @@ namespace ABML
             this.btn_save.TabIndex = 21;
             this.btn_save.Text = "Save";
             this.btn_save.UseVisualStyleBackColor = true;
+            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
             // 
             // btn_cancel
             // 
@@ -373,26 +377,31 @@ namespace ABML
             this.btn_cancel.TabIndex = 22;
             this.btn_cancel.Text = "Cancel";
             this.btn_cancel.UseVisualStyleBackColor = true;
+            this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
+            // 
+            // error
+            // 
+            this.error.ContainerControl = this;
             // 
             // frm_pokemon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(594, 534);
+            this.ClientSize = new System.Drawing.Size(635, 534);
             this.Controls.Add(this.btn_cancel);
             this.Controls.Add(this.btn_save);
             this.Controls.Add(this.tbx_name);
             this.Controls.Add(this.lbl_id);
-            this.Controls.Add(this.groupBox10);
+            this.Controls.Add(this.gbx_images);
             this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.gbx_types);
+            this.Controls.Add(this.gbx_stats);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frm_pokemon";
             this.Text = "ADD POKéMON";
             this.Load += new System.EventHandler(this.frm_pokemon_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.gbx_stats.ResumeLayout(false);
+            this.gbx_stats.PerformLayout();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
             this.groupBox6.ResumeLayout(false);
@@ -405,13 +414,14 @@ namespace ABML
             this.groupBox9.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
+            this.gbx_types.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbx_generation)).EndInit();
-            this.groupBox10.ResumeLayout(false);
-            this.groupBox10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tbr_images)).EndInit();
+            this.gbx_images.ResumeLayout(false);
+            this.gbx_images.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_image)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbr_images)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.error)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -419,14 +429,14 @@ namespace ABML
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gbx_stats;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox gbx_types;
         private System.Windows.Forms.CheckedListBox clb_types;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.ListBox lbx_generations;
@@ -437,7 +447,7 @@ namespace ABML
         private System.Windows.Forms.TextBox tbx_spAttack;
         private System.Windows.Forms.TextBox tbx_attack;
         private System.Windows.Forms.TextBox tbx_speed;
-        private System.Windows.Forms.GroupBox groupBox10;
+        private System.Windows.Forms.GroupBox gbx_images;
         private System.Windows.Forms.TrackBar tbr_images;
         private System.Windows.Forms.Label lbl_image3;
         private System.Windows.Forms.Label lbl_image2;
@@ -451,5 +461,6 @@ namespace ABML
         private System.Windows.Forms.PictureBox pbx_image;
         private System.Windows.Forms.Button btn_save;
         private System.Windows.Forms.Button btn_cancel;
+        private System.Windows.Forms.ErrorProvider error;
     }
 }
